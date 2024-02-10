@@ -1,6 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
-import Notiflix from 'notiflix';
 
 import { ContactItem } from 'components';
 
