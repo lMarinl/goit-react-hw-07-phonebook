@@ -30,7 +30,7 @@ export const ContactsList = () => {
   const  getFilteredContacts = filteredContacts();
   return (
     <div>
-    {error &  status === STATUSES.error && {error}}
+    {error &&  status === STATUSES.error && (<p>{error.massage}</p>)}
     <ul>
       {getFilteredContacts?.map(contact => (
         <ContactItem
