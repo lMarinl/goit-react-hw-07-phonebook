@@ -5,22 +5,16 @@ const instance = axios.create({
 });
 
 export const requestContacts = async () => {
-   const { data } = await instance.get('/contacts');
-    return data;
+  const { data } = await instance.get('/contats');
+  return data;
 };
 
 export const requestAddContact = async formData => {
-
-    const { data } = await instance.post('/contacts', formData);
-    return data;
-
+  const { data } = await instance.post('/contacts', formData);
+  return data;
 };
 
 export const requestDeleteContact = async id => {
-
-    await instance.delete(`/contacts/${id}`);
-    return id;
-
+  await instance.delete(`/contacts/${id}`);
+  return id;
 };
-
-
